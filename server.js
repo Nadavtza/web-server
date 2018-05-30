@@ -51,6 +51,13 @@ app.get('/about', (req,res)=>{
         title: 'about Page'
     });
 }); 
+app.get('/projects' , (req,res)=>{
+    res.render('projects.hbs', {
+        title: 'Projects',
+        weatherMessage: 'the wheather for today is...'
+    }
+)
+});
 
 app.get('/bad' , (req,res)=>{
     res.send({
