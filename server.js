@@ -54,7 +54,7 @@ app.get('/about', (req,res)=>{
 app.get('/projects' , (req,res)=>{
     res.render('projects.hbs', {
         title: 'Projects',
-        weatherMessage: 'the wheather for today is...'
+        weatherMessage: 'Projects page'
     }
 )
 });
@@ -68,3 +68,7 @@ app.get('/bad' , (req,res)=>{
 app.listen(port , ()=>{
     console.log(`server is up on port ${port}`);
 });
+
+
+
+
